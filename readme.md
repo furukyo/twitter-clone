@@ -13,6 +13,7 @@ chmod -R 777 ./storage
 chmod -R 777 ./bootstrap/cache 
 systemctl start nginx
 systemctl start php-fpm
+test text
 ```
 
 
