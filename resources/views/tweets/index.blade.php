@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8 mb-3 text-right">
-            <a href="{{ url('users') }}">ユーザ一覧 <i class="fas fa-users" class="fa-fw"></i> </a>
+            <a href="{{ url('users') }}">ユーザ一覧 <i  class="fa-fw"></i> </a>
         </div>
         @if (isset($timelines))
             @foreach ($timelines as $timeline)
@@ -35,7 +35,7 @@
                                             @csrf
                                             @method('DELETE')
 
-                                            <a href="{{ url('tweets/' .$timeline->id .'/edit') }}" class="dropdown-item">編集</a>
+                                            <!--<a href="{{ url('tweets/' .$timeline->id .'/edit') }}" class="dropdown-item">編集</a>-->
                                             <button type="submit" class="dropdown-item del-btn">削除</button>
                                         </form>
                                     </div>

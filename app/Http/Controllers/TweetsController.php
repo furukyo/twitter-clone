@@ -84,7 +84,7 @@ class TweetsController extends Controller
     }
 
     //ツイート編集機能
-    public function update(Request $request, Tweet $tweet)
+    /*public function update(Request $request, Tweet $tweet)
     {
         $data = $request->all();
         $validator = Validator::make($data, [
@@ -95,7 +95,7 @@ class TweetsController extends Controller
         $tweet->tweetUpdate($tweet->id, $data);
 
         return redirect('tweets');
-    }
+    }*/
 
     //ツイート削除機能
     public function destroy(Tweet $tweet)

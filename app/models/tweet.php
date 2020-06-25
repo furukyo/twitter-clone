@@ -121,14 +121,14 @@ public function favorites()
             return $this->where('user_id', $user_id)->where('id', $tweet_id)->first();
         }
     
-        public function tweetUpdate(Int $tweet_id, Array $data)
+        /*public function tweetUpdate(Int $tweet_id, Array $data)
         {
             $this->id = $tweet_id;
             $this->text = $data['text'];
             $this->update();
     
             return;
-        }
+        }*/
     
         public function tweetDestroy(Int $user_id, Int $tweet_id)
         {
